@@ -1,0 +1,22 @@
+/* Custom CSS */
+section {
+    min-height: 100vh; /* Ensure full-height sections */
+}
+.pricing-highlight {
+    background: #0B75E0;
+    color: white;
+    border: none;
+}
+.pricing-highlight .card-title {
+    font-weight: bold;
+}
+.testimonial-scroll {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.testimonial-card {
+    scroll-snap-align: start;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 200px;
+}
