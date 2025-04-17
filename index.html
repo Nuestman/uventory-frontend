@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
     <!-- Navbar -->
@@ -22,8 +23,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="/index base.html">Base html</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/index base 2.html">Base 2 html</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="/index base.html">Base html</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/index base 2.html">Base 2 html</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                         <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -35,15 +36,15 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-light text-center d-flex align-items-center justify-content-center" >
-        <div class="container">
-            <div class="hero-image mx-auto" style="max-width: 150px;">
-                <img src="./assets/images/uventory-logo.png" alt="Hero Image" class="img-fluid rounded-3 mb-4">
+    <section class="bg-light text-center vh-100 d-flex align-items-center justify-content-center" >
+            <div class="container">
+                <div class="hero-image mx-auto" style="max-width: 150px;">
+                    <img src="./assets/images/uventory-logo.png" alt="Hero Image" class="img-fluid rounded-3 mb-4">
+                </div>
+                <h1 class="fw-bold">Track. Manage. Easily.</h1>
+                <p class="lead w-50 mx-auto">Revolutionizing inventory management for small and medium-sized businesses.</p>
+                <a href="#contact"><button class="btn btn-primary btn-lg">Get Started</button></a>
             </div>
-            <h1 class="fw-bold">Track. Manage. Easily.</h1>
-            <p class="lead w-50 mx-auto">Revolutionizing inventory management for small and medium-sized businesses.</p>
-            <a href="#contact"><button class="btn btn-primary btn-lg">Get Started</button></a>
-        </div>
     </section>
 
     <!-- Features Section -->
@@ -92,53 +93,54 @@
     <section id="testimonials" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-4">What Our Users Say</h2>
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-8 text-center">
+            <div class="row justify-content-center mb-3">
+                <div class="col-md-5 text-center">
                     <p>See how Uventory has transformed businesses and simplified inventory management for our users.</p>
                 </div>
             </div>
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="h">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="carouselSlider" class="border carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card text-center p-4">
+                            <div class="card-body">
+                                <p class="card-text col-md-5 mx-auto">"Uventory has completely transformed how we manage stock across our branches. Highly recommend it!"</p>
+                                <h6 class="fw-bold">- Jane Doe, Small Business Owner</h6>
+                            </div>
+                            <div class="card-img my-4"><img class="my-4 w-25 rounded-circle" src="./assets/images/contact-img.jpg" alt=""></div>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="testimonial-card card text-center bg-primary text-white">
-                                <div class="card-body">
-                                    <p class="card-text">"Uventory has completely transformed how we manage stock across our branches. Highly recommend it!"</p>
-                                    <h6 class="fw-bold">- Jane Doe, Small Business Owner</h6>
-                                </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center p-4">
+                            <div class="card-body">
+                                <p class="card-text col-md-5 mx-auto">"The reporting module makes it so easy to monitor inventory and sales trends. A must-have tool!"</p>
+                                <h6 class="fw-bold">- John Smith, Hospital Administrator</h6>
                             </div>
+                            <div class="card-img my-4"><img class="my-4 w-25 rounded-circle" src="./assets/images/contact-img.jpg" alt=""></div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="testimonial-card card text-center bg-dark text-white">
-                                <div class="card-body">
-                                    <p class="card-text">"The reporting module makes it so easy to monitor inventory and sales trends. A must-have tool!"</p>
-                                    <h6 class="fw-bold">- John Smith, Hospital Administrator</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial-card card text-center bg-warning text-white">
-                                <div class="card-body">
-                                    <p class="card-text">"The audit module gives us unmatched transparency in stock flow. Highly efficient!"</p>
-                                    <h6 class="fw-bold">- Emily Jones, Retail Manager</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Carousel Controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center p-4">
+                            <div class="card-body">
+                                <p class="card-text col-md-5 mx-auto">"The audit module gives us unmatched transparency in stock flow. Highly efficient!"</p>
+                                <h6 class="fw-bold">- Emily Jones, Retail Manager</h6>
+                            </div>
+                            <div class="card-img my-4"><img class="my-4 w-25 rounded-circle" src="./assets/images/contact-img.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
